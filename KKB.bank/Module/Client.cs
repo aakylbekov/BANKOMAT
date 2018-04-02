@@ -19,7 +19,10 @@ namespace KKB.bank.Module
             }
             set
             {
-                Fullname_ = value.Replace("<center><tb><font size = 7>").Replace();
+                Fullname_ = value
+                   .Replace("<center><b><font size=7>", "")
+                   .Replace("</font></b></center>", "")
+                   .Replace("", "");
             }
         }
         private string IIN_;
@@ -46,7 +49,7 @@ namespace KKB.bank.Module
         List<Account> ListAccount;
         public void ClientInfoPrint()
         {
-            Console.WriteLine("{0}\n {1}\n {2}\n {3}\n {4}\n {5}\n", Fullname, Dob, Login, Password, PhoneNumber);
+            Console.WriteLine("{0}\n {1}\n {2}\n {3}\n {4}\n {5}\n", Fullname, IIN, Login, Password, PhoneNumber, Dob);
         }
     }
 }

@@ -13,8 +13,8 @@ namespace Bankomat
     {
         static void Main(string[] args)
         {
-            try
-            {
+            //try
+            //{
                 List<Client> ListClient = new List<Client>();
                 GeneratorName.Generator g = new Generator();
                 Client c1 = new Client();
@@ -26,12 +26,18 @@ namespace Bankomat
                 c1.Password = "123";
                 c1.PhoneNumber = "7544541155430";
                 ListClient.Add(c1);
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-               
-            }
+
+         
+
+
+
+            c1.ClientInfoPrint();
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+
+            //}
 
         }
     }
