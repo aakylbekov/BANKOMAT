@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 namespace KKB.bank.Module
 {
     public enum CardType { MaseterCard, Visa, Maestro }
-    class Cards
+    public class Cards
     {
 
         
