@@ -51,7 +51,7 @@ namespace Bankomat
                             Console.WriteLine("1) Accounts");
                             Console.WriteLine("2) Create account");
                             Console.WriteLine("3) Add balance");
-                            Console.WriteLine("6) Add balance");
+                            Console.WriteLine("6) Exit");
                             int menu = 0;
                             Int32.TryParse(Console.ReadLine(), out menu);
                             if (menu > 2 || menu < 1)
@@ -82,7 +82,6 @@ namespace Bankomat
                                         }
                                         break;
                                     case 6:
-                                        { }
                                         break;            
                                 }
 
